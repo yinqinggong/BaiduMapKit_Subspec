@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type =>"MIT", :file => "LICENSE" }
   s.authors      = { "baidu map sdk" => "409783481@qq.com" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/YiJianJun/BaiduMapKit_Subspec.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/YiJianJun/BaiduMapKit_Subspec.git", :tag => "#{s.version}", :submodules => true }
 
   # s.source_files = "BaiduMapKit/*.framework/Headers/*.h"
   # s.public_header_files = '#{s.source_files}' # "BaiduMapKit/*.framework/Headers/*.h"
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.subspec 'Base' do |ss|
     ss.ios.deployment_target = '5.0'
 
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Base.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Base.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
 
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Cloud.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
 
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Location.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Location.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
     
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Map.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Map.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
     ss.resources = "BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
     
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
     
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Radar.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
     
 
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
 
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Search.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Search.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
 
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
     
-    ss.source_files = 'BaiduMapKit/BaiduMapKit_Utils.framework/Headers/**.h'
+    ss.source_files = 'BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/**.h'
     ss.public_header_files = '#{ss.source_files}'
     
 
