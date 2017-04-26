@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   
   s.homepage     = "http://developer.baidu.com/map/index.php?title=iossdk"
   s.license      = { :type =>"MIT", :file => "LICENSE.txt" }
-  s.authors      = { "baidu map sdk" => "dituapi_01@163.com" }
+  s.authors      = { "baidu map sdk" => "409783481@qq.com" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/BaiduLBS/BaiduMapKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/YiJianJun/BaiduMapKit_Subspec.git", :tag => "#{s.version}" }
 
   # s.source_files = "BaiduMapKit/*.framework/Headers/*.h"
   # s.public_header_files = '#{s.source_files}' # "BaiduMapKit/*.framework/Headers/*.h"
