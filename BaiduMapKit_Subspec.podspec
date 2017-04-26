@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = "BaiduMapKit"
+  s.name         = "BaiduMapKit_Subspec"
   s.version      = "3.3.0"
-  s.summary      = "百度地图iOS SDK（CocoaPods百度地图官方库）"
+  s.summary      = "百度地图iOS SDK（CocoaPods百度地图官方库）, 支持Cocoaspods subspec"
   s.description  = <<-DESC
       百度地图iOS SDK：百度地图官方CocoaPods.
       百度地图iOS SDK是一套基于iOS 5.0及以上版本设备的应用程序接口，不仅提供展示地图的基本接口，还提供POI检索、路径规划、地图标注、离线地图、定位、周边雷达等丰富的LBS能力
@@ -43,8 +43,8 @@ Pod::Spec.new do |s|
   s.subspec 'Cloud' do |ss|
     ss.ios.deployment_target = '5.0'
     
-    ss.dependency 'BaiduMapKit/Base'
-    ss.ios.dependency 'BaiduMapKit/Base'
+    ss.dependency 'BaiduMapKit_Subspec/Base'
+    ss.ios.dependency 'BaiduMapKit_Subspec/Base'
 
     ss.source_files = 'BaiduMapKit/BaiduMapKit_Cloud.framework/Headers/*.h'
     ss.public_header_files = '#{ss.source_files}'
@@ -57,8 +57,8 @@ Pod::Spec.new do |s|
   s.subspec 'Location' do |ss|
     ss.ios.deployment_target = '5.0'
     
-    ss.dependency 'BaiduMapKit/Base'
-    ss.ios.dependency 'BaiduMapKit/Base'
+    ss.dependency 'BaiduMapKit_Subspec/Base'
+    ss.ios.dependency 'BaiduMapKit_Subspec/Base'
 
     ss.source_files = 'BaiduMapKit/BaiduMapKit_Location.framework/Headers/*.h'
     ss.public_header_files = '#{ss.source_files}'
@@ -72,8 +72,8 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '5.0'
 
 
-    ss.dependency 'BaiduMapKit/Base'
-    ss.ios.dependency 'BaiduMapKit/Base'
+    ss.dependency 'BaiduMapKit_Subspec/Base'
+    ss.ios.dependency 'BaiduMapKit_Subspec/Base'
     
     ss.source_files = 'BaiduMapKit/BaiduMapKit_Map.framework/Headers/*.h'
     ss.public_header_files = '#{ss.source_files}'
@@ -87,8 +87,8 @@ Pod::Spec.new do |s|
   s.subspec 'Radar' do |ss|
     ss.ios.deployment_target = '5.0'
 
-    ss.dependency 'BaiduMapKit/Base'
-    ss.ios.dependency 'BaiduMapKit/Base'
+    ss.dependency 'BaiduMapKit_Subspec/Base'
+    ss.ios.dependency 'BaiduMapKit_Subspec/Base'
     
     ss.source_files = 'BaiduMapKit/BaiduMapKit_Radar.framework/Headers/*.h'
     ss.public_header_files = '#{ss.source_files}'
@@ -102,8 +102,8 @@ Pod::Spec.new do |s|
   s.subspec 'Search' do |ss|
     ss.ios.deployment_target = '5.0'
     
-    ss.dependency 'BaiduMapKit/Base'
-    ss.ios.dependency 'BaiduMapKit/Base'
+    ss.dependency 'BaiduMapKit_Subspec/Base'
+    ss.ios.dependency 'BaiduMapKit_Subspec/Base'
 
     ss.source_files = 'BaiduMapKit/BaiduMapKit_Search.framework/Headers/*.h'
     ss.public_header_files = '#{ss.source_files}'
@@ -116,8 +116,8 @@ Pod::Spec.new do |s|
   s.subspec 'Utils' do |ss|
     ss.ios.deployment_target = '5.0'
 
-    ss.dependency 'BaiduMapKit/Base'
-    ss.ios.dependency 'BaiduMapKit/Base'
+    ss.dependency 'BaiduMapKit_Subspec/Base'
+    ss.ios.dependency 'BaiduMapKit_Subspec/Base'
     
     ss.source_files = 'BaiduMapKit/BaiduMapKit_Utils.framework/Headers/*.h'
     ss.public_header_files = '#{ss.source_files}'
