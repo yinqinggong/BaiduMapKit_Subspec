@@ -1,0 +1,2 @@
+#!/bin/bash
+pod trunk push BaiduMapKit_Subspec.podspec --allow-warnings
