@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BaiduMapKit_Subspec"
-  s.version      = "3.3.0"
+  s.version      = "3.3.0.1"
   s.summary      = "百度地图iOS SDK（CocoaPods百度地图官方库）, 支持Cocoaspods subspec"
   s.description  = <<-DESC
       百度地图iOS SDK：百度地图官方CocoaPods.
