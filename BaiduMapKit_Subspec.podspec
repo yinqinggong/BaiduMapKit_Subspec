@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.dependency "Masonry"
 
 
-  s.default_subspec = 'Base'
+  s.default_subspec = 'Base', 'Cloud', 'Location', 'Map', 'Radar', 'Search', 'Utils'
 
   s.subspec 'Base' do |ss|
     ss.ios.deployment_target = '5.0'
