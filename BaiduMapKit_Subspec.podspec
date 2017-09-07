@@ -39,7 +39,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Base.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
   s.subspec 'Cloud' do |ss|
@@ -55,7 +54,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
 
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Cloud.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
   s.subspec 'Location' do |ss|
@@ -71,7 +69,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Location.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
   s.subspec 'Map' do |ss|
@@ -89,7 +86,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Map.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
   s.subspec 'Radar' do |ss|
@@ -106,7 +102,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Radar.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
   s.subspec 'Search' do |ss|
@@ -122,7 +117,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
     
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Search.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
   s.subspec 'Utils' do |ss|
@@ -139,7 +133,6 @@ Pod::Spec.new do |s|
     ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Utils.framework"
-    ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
   end
 
 end
